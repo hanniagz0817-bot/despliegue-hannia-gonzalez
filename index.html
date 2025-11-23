@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Práctica: Despliegue Automaticon con Git y GitHub Pages  
+    </title>  
+    <style>  
+    /* CSS para dar un poco de estilo */  
+    body {  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        background-image: none; /* quitamos la URL */  
+        background-color: #ffe6f2; /* rosita pastel girly */  
+        background-size: cover;  
+        background-repeat: no-repeat;  
+        background-attachment: fixed;  
+        color: #333;  
+        margin: 0;  
+        padding: 20px;  
+        text-align: center;  
+    }  
+
+    .container {  
+    }  
+
+    h1 {  
+        color: #333; /* rosa pastel */  
+    }  
+
+    ul {  
+        list-style-type: none; /* Quita los puntos de la lista */  
+        padding: 0;  
+    }  
+
+    li {  
+        background-color: #fde4f5;  
+        border: 1px solid #ffa7e6;  
+        margin-bottom: 8px;  
+        padding: 12px;  
+        border-radius: 5px;  
+        text-align: left;  
+        transition: background-color 0.3s;  
+    }  
+
+    li:hover {  
+        background-color: #f8c9e8;  
+    }  
+
+    #contador {  
+        margin-top: 20px;  
+        border-bottom: 2px solid #e0e0e0;  
+        padding-bottom: 10px;  
+    }  
+</style>
+
+</head>  
+<body>  
+<div class="container">  
+    <h1>🎀Práctica: Despliegue Automatico con Git y GitHub Pages</h1>  
+
+    <ul id="listaDeNombres">  
+        <li>Hannia Beatriz Gonzalez Espinosa</li>  
+        <li>Azul Alizee Villela Hermosillo</li>  
+        <li>Adriana Sarahi Casanova Zarate</li>  
+    </ul>  
+
+    <p id="contador"></p>
+</div>  
+
+<script>  
+    // JavaScript opcional para funcionalidad básica  
+    document.addEventListener("DOMContentLoaded", () => {  
+        const lista = document.getElementById("listaDeNombres");  
+        const items = lista.getElementsByTagName("li");  
+        const contadorElemento = document.getElementById("contador");  
+        contadorElemento.textContent = "Total de integrantes: " + items.length;  
+    });  
+</script>  
+</body>  
+</html>
