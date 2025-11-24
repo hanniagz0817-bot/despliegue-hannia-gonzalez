@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Práctica: Despliegue Automaticon con Git y GitHub Pages  
+    </title>  
+    <style>  
+    /* CSS para dar un poco de estilo */  
+    body {  
+    }  
+
+     {  
+    }  
+
+    h1 {  
+        color: #333; /* rosa pastel */  
+    }  
+
+    ul {  
+    }  
+
+    li {  
+    }  
+
+    li:hover {  
+        background-color: #f8c9e8;  
+    }  
+
+    #contador {  
+    }  
+</style>
+
+</head>  
+<body>  
+<div class="container">  
+    <h1>🎀Práctica: Despliegue Automatico con Git y GitHub Pages</h1>  
+
+    <ul id="listaDeNombres">  
+        <li>Hannia Beatriz Gonzalez Espinosa</li>  
+        <li>Azul Alizee Villela Hermosillo</li>  
+        <li>Adriana Sarahi Casanova Zarate</li>  
+    </ul>  
+
+    <p id="contador"></p>
+</div>  
+
+<script>  
+    // JavaScript opcional para funcionalidad básica  
+    document.addEventListener("DOMContentLoaded", () => {  
+        const lista = document.getElementById("listaDeNombres");  
+        const items = lista.getElementsByTagName("li");  
+        const contadorElemento = document.getElementById("contador");  
+        contadorElemento.textContent = "Total de integrantes: " + items.length;  
+    });  
+</script>  
+</body>  
+</html>
